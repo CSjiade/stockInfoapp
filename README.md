@@ -16,7 +16,7 @@ Adding a portfolio simulation analytics feature such as volatility, sharpe ratio
 
 
 
-![Alt text](https://github.com/CSjiade/stockInfoapp/blob/main/images/Home.png)
+![Alt text](https://github.com/CSjiade/stockInfoapp/blob/main/images/Home.png) ![alt-text-2](https://github.com/CSjiade/stockInfoapp/blob/main/images/Search.png)
 
 
 
