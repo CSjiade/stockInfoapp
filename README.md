@@ -2,12 +2,12 @@
 A stock information android app i thought of and built while experimenting with android studio.
 
 **Use case of the app** 
-Users who want to access news and surface level information of a stock of their interest.
+Users who want to access surface level information of a stock of their interest and latest news-related of the stock.
 
 App uses API from https://polygon.io/ and "https://newsapi.org/v2/". Hence limited to US stocks only.
 
 **Current Features**:
-App currently displays basic stock information, financials, YTD Stock Chart and related Stock-news.
+App currently displays basic stock information, financials, YTD Stock Chart and related Stock-news to the stock searched.
 
 **Future Features that i am thinking of to implement:**
 Interactive and dynamic Stock Chart if there is cheap or free API avaliable to request stock price and datetime data from
