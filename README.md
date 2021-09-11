@@ -10,8 +10,8 @@ App uses API from https://polygon.io/ and "https://newsapi.org/v2/". Hence limit
 App currently displays basic stock information, financials, YTD Stock Chart and related Stock-news to the stock searched.
 
 **Future Features that i am thinking of to implement:**
-Interactive and dynamic Stock Chart if there is cheap or free API avaliable to request stock price and datetime data from
-Improve search bar to autocomplete if there is cheap or free API avaliable to request stock ticker from
+Interactive and dynamic Stock Chart if there is cheap or free API avaliable to request stock price and datetime data from.<br />
+Improve search bar to autocomplete if there is cheap or free API avaliable to request stock ticker from. <br />
 Adding a portfolio simulation analytics feature such as volatility, sharpe ratio and returns calculations
 
 
