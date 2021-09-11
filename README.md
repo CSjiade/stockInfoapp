@@ -36,8 +36,6 @@ Adding a portfolio simulation analytics feature such as volatility, sharpe ratio
      <td>Financials Button</td>
      <td> News </td>
      <td>Company Info</td>
-    
-    </td>
   </tr>
   <tr>
     <td><img src="https://github.com/CSjiade/stockInfoapp/blob/main/images/chart.png" width=270 height=480></td>
