@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.covid19update">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.example.app.Detailed"
+            android:exported="true" />
+        <activity
+            android:name="com.example.app.SplashScreen"
+            android:screenOrientation="locked">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.app.NewsActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.app.StockHome"
+            android:exported="true" />
+        <activity
+            android:name="com.example.app.StockOverViewActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.app.StockActivity"
+            android:exported="true" />
+
+        <activity android:name="com.example.app.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

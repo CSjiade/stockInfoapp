@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.app.MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewgraph"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="10dp"
+        android:layout_margin="15dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/my_drawable"
+                android:padding="5dp" >
+
+                <TextView
+                    android:text="Current Market Status"
+                    android:textColor="@color/black"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/nasdaq"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/my_drawable"
+                        android:gravity="center"
+                        android:padding="10dip"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="NASDAQ" />
+
+                    <TextView
+                        android:id="@+id/status"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/my_drawable"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:padding="10dip"
+                         />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/nyse"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_drawable"
+                        android:gravity="center"
+                        android:padding="10dip"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="NYSE" />
+
+                    <TextView
+                        android:id="@+id/status2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_drawable"
+                        android:gravity="center"
+                        android:padding="10dip"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/otc"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_drawable"
+                        android:gravity="center"
+                        android:padding="10dip"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="OTC Market" />
+
+                    <TextView
+                        android:id="@+id/status3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_drawable"
+                        android:gravity="center"
+                        android:padding="10dip"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/crypto"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_drawable"
+                        android:gravity="center"
+                        android:padding="10dip"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="CRYPTO market" />
+
+                    <TextView
+                        android:id="@+id/status4"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/my_drawable"
+                        android:gravity="center"
+                        android:padding="10dip"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="" />
+                </TableRow>
+
+
+            </TableLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewlist"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp"
+        android:layout_below="@+id/cardViewgraph"
+        android:layout_above="@+id/linbtn"
+        android:layout_margin="20dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textchart"
+                android:layout_width="200dp"
+                android:layout_height="20dp"
+                android:textStyle="bold"
+                />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnstock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/active"
+            android:text="Stock"
+            android:textColor="#fff"></Button>
+
+        <Button
+            android:id="@+id/btnnews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/active"
+            android:text="Global News"
+            android:textColor="#fff"></Button>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

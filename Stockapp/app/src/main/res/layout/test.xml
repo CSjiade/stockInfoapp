@@ -1,0 +1,56 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/my_drawable"
+    android:padding="5dp" >
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_drawable"
+            android:gravity="center"
+            android:padding="15dip"
+            android:text="Months" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_drawable"
+            android:gravity="center"
+            android:padding="15dip"
+            android:text="Number of Visits" />
+
+
+    </TableRow>
+
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_drawable"
+            android:gravity="center"
+            android:padding="15dip"
+            android:text="Februrary" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/my_drawable"
+            android:gravity="center"
+            android:padding="15dip"
+            android:text="" />
+    </TableRow>
+
+
+</TableLayout>

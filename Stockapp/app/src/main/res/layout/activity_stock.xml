@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    tools:context="com.example.app.StockActivity">
+
+    <EditText
+        android:id="@+id/editSearch_stock"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="15dp"
+        android:hint="Enter Stock Ticker "
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:imeOptions="actionGo"
+        >
+
+
+    </EditText>
+
+
+
+    <ListView
+        android:id="@+id/listView_stock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editSearch_stock"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+    </ListView>
+
+    <com.leo.simplearcloader.SimpleArcLoader
+        android:visibility="visible"
+        android:id="@+id/loaderc_stock"
+        android:layout_centerInParent="true"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:arc_style="simple_arc">
+    </com.leo.simplearcloader.SimpleArcLoader>
+
+</RelativeLayout>
