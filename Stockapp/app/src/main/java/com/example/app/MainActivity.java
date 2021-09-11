@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
     TextView status,status2,status3,status4;
     Button btnstock, btnnews;
     public static List<MarketStatus> marketStatusList = new ArrayList<>();
-    public static String API_KEY = "GSYkwV9gDh3OrwtlDM75szDxvcdAs_bP";
+    public static String API_KEY = "ENTER POLYGON API KEY";
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
