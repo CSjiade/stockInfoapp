@@ -1,5 +1,5 @@
 # stockInfoapp
-A stock information android app i thought of and built while experimenting with android studio.
+A stock info aggregator android app built while experimenting with android development.
 
 **Use case of the app** 
 Users who want to access surface level information of a stock and those who also want to keep abreast of news related to a stock of their interest.
